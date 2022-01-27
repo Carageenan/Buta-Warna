@@ -80,17 +80,16 @@ function testing() {
       },
     ] //di isi sama gambar dan jawaban nya.
     //img harus gambar yang di isi, answer jawaban nya berbentuk number.
-    
-    const index = Math.floor(Math.random() * quiz.length) // 0 - 15 agar keluar random.
-    
-    const questionObj = quiz[index] // quiz[0] => { question: 'gambar yang akan ditampilkan' }
-    
-    const questionElement = document.getElementById('question') // Ngambil gambar yang ada di html pake DOM
-    
-    questionElement.innerHTML = questionObj.question
-    
-    return questionObj
+    for (let i = 0; i < quiz.length; i++) {
+      const questionObj = quiz[index] // quiz[0] => { question: 'gambar yang akan ditampilkan' }
+      const questionElement = document.getElementById('question') // Ngambil gambar yang ada di html pake DOM
+      questionElement.innerHTML = questionObj.question
+    }
+     return questionObj
   }
+
+  let question = generateQuestion()
+  let count = 1
   
   checkAnswerElement.addEventListener('click', function() {
     const answerElement = document.getElementById('answer')
@@ -115,23 +114,28 @@ function testing() {
   
   function daerah(str) {
     //function menambahkan rumah sakit di hasil jika user buta warna parsial/total
-    if (str === 'jakarta') {
-      return 'untuk info lengkap silahkan pergi ke RS Mata JEC'
-    } else if (str === 'bogor') {
-      return 'untuk info lengkap silahkan pergi ke Bogor Eye Center'
-    } else if (str === 'depok') {
-      return 'untuk info lengkap silahkan pergi ke klinik Mata Depok'
-    } else if (str === 'tangerang') {
-      return 'untuk info lengkap silahkan pergi ke Poli Mata RS Sari Asih Sangiang'
-    } else if (str === 'bekasi') {
-      return 'untuk info lengkap silahkan pergi ke Klinik Utama Mata JEC Bekasi'
+    let input = hasilTest()
+    if(input === 'Anda buta warna parsial' && input === 'anda buta warna total'){
+      if (str === 'jakarta') {
+        return 'untuk info lengkap silahkan pergi ke RS Mata JEC'
+      } else if (str === 'bogor') {
+        return 'untuk info lengkap silahkan pergi ke Bogor Eye Center'
+      } else if (str === 'depok') {
+        return 'untuk info lengkap silahkan pergi ke klinik Mata Depok'
+      } else if (str === 'tangerang') {
+        return 'untuk info lengkap silahkan pergi ke Poli Mata RS Sari Asih Sangiang'
+      } else if (str === 'bekasi') {
+        return 'untuk info lengkap silahkan pergi ke Klinik Utama Mata JEC Bekasi'
+      } else {
+        return 'hanya research daerah JABODETABEK'
+      }
     } else {
-      return 'hanya research daerah JABODETABEK'
-    }
+        return 'jagalah mata anda'
+      }
   }
   
   function hasilAkhir() {
-    
+
   }
   
   
