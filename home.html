@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Tes Buta Warna Landing Page</title>
+
+    <!-- <style>
+      .selector-for-some-widget {
+        box-sizing: content-box;
+      }
+
+      @keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+    </style> -->
+
+  </head>
+
+  <body style="background-image: url(https://assets.indozone.news/local/5f49d0788e982.jpg); background-size: cover;">
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: linear-gradient(aqua, rgb(0, 0, 0));">
+        <a class="navbar-brand" href="home.html" style="font-family: 'Press Start 2P', cursive;">TesButaWarna</a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <!-- <div class="collapse navbar-collapse" id="navbarScroll"> -->
+          <!-- <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning" type="submit">Search</button>
+          </form> -->
+        <!-- </div> -->
+      </nav>
+    </div>
+
+    <br>
+
+    <div class="card text-white w-75 h-75 p-3 mx-auto rounded" style="background: linear-gradient(-45deg, aqua, black); margin-top: 6%;">
+      <div class="card-header"><div class="alert alert-warning" role="alert">
+        Tes ini hanya diperuntukan bagi masyarakat yang berdomisili di <a href="#" class="alert-link">JaBoDeTaBeK</a>.
+      </div></div>
+      <div class="card-body">
+        <h5 class="card-title">Data Diri</h5>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Nama</label>
+              <input type="text" class="form-control" id="inputNama" placeholder="Silahkan masukan nama anda" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Umur</label>
+              <input type="text" class="form-control" id="inputTempatlahir" placeholder="Silahkan masukan umur anda" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Alamat</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Silahkan masukan alamat lengkap anda" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="inputCity">Kota</label>
+              <select id="inputCity" class="form-control" required>
+                <option>Jakarta</option>
+                <option>Bogor</option>
+                <option>Depok</option>
+                <option>Tangerang</option>
+                <option>Bekasi</option>
+              </select>
+            </div>
+          </div>
+          <center>
+            <button type="submit" class="btn btn-success shadow p-2 mt-3 rounded border-dark">Mulai Tes</button>
+          </center>
+          
+        </form>
+      </div>
+    </div>
+    <br>
+
+    <!-- <div>
+      <div class="spinner-grow text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-info" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-info" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div> -->
+    
+
+  </body>
+  
+  <!-- <div class="waveWrapper waveAnimation">
+    <div class="waveWrapperInner bgTop">
+      <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+    </div>
+    <div class="waveWrapperInner bgMiddle">
+      <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+    </div>
+    <div class="waveWrapperInner bgBottom">
+      <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+    </div>
+  </div> -->
+
+  <footer class="card-footer fixed-bottom text-white text-center p-0 " style="background: linear-gradient(aqua, black);">
+    <p class="">&copy;2022 Grup2/TesButaWarna</p>
+  </footer>
+  
+</html>
